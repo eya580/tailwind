@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="bg-pink-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">acceuil</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="text-xl pt-1 pl-1 font-medium text-gray-300" aria-current="page">Assas Aya</a>
+                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">acceuil</a>
+                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">projets</a>
+                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contacts</a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pink-800">
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">View notifications</span>
+                <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                </svg>
+              </button>
+      
+              <!-- Profile dropdown -->
+              <div class="relative ml-3">
+                <div>
+                  <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pink-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-10 w-10 rounded-full" src="WhatsApp Image 2024-10-12 à 10.10.50_efc75ac4.jpg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+    <section  class="relative h-60 bg-cover bg-center flex items-center justify-center">
+      <img src="public/depositphotos_505106924-stock-illustration-light-colorful-flat-background-triangles.jpg" alt="">
+      <div class="absolute inset-0 bg-gradient-to-b from-pink-400 to-gray-500 "></div> <!-- Overlay sombre pour le contraste du texte -->
+      
+      <h1 class="relative text-white text-5xl font-bold uppercase z-10">
+          Élève Ingénieur
+      </h1>
+    </section>
+    <section class=" relative py-12 h-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Mes Compétences</h2>
+        
+        <!-- Grille de compétences -->
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Compétence 1 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                <h3 class="text-xl font-semibold mb-3">Développement Web</h3>
+                <p class="text-gray-600">HTML, CSS, JavaScript, Tailwind CSS, bootstrap CSS, Node.js</p>
+            </div>
+
+            <!-- Compétence 2 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                <h3 class="text-xl font-semibold mb-3">Programmation</h3>
+                <p class="text-gray-600">Python, C, C++,Pascal, Algorithmique</p>
+            </div>
+
+            <!-- Compétence 3 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                <h3 class="text-xl font-semibold mb-3">Bases de Données</h3>
+                <p class="text-gray-600">SQL , SQLite3 </p>
+            </div>
+
+            <!-- Compétence 4 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                <h3 class="text-xl font-semibold mb-3">Gestion de Projets</h3>
+                <p class="text-gray-600">Scrum, Agile, Gestion d'équipe</p>
+            </div>
+
+            <!-- Compétence 5 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                <h3 class="text-xl font-semibold mb-3">modélisation</h3>
+                <p class="text-gray-600">solidworks,MatLab</p>
+            </div>
+
+            <!-- Compétence 6 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                <h3 class="text-xl font-semibold mb-3">soft-skills</h3>
+                <p class="text-gray-600"> travail sous pression, adaptabilité, gestion du temps</p>
+            </div>
+
+        </div>
+     </div>
+   </section>
+
+  <section class="pt-80"> 
+   <div class="max-w-5xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+     <h2 class="text-3xl font-bold mb-8 text-center">Mes Projets</h2>        
+          <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:w-1/2 mb-6 md:mb-0">
+              <img src="Capture d'écran 2024-10-23 151152.png" alt="Restaurant Fictif" class="rounded-lg shadow-lg w-full">
+            </div>
+            <div class="md:w-1/2 md:pl-8">
+              <h3 class="text-2xl font-bold mb-4">Restaurant Fictif</h3>
+              <p class="text-gray-600">
+                Ce projet consiste à créer le concept d'un restaurant fictif avec un site web moderne, proposant une interface utilisateur intuitive pour les réservations, les menus interactifs et un design élégant. Ce projet illustre mes compétences en design web, en gestion de contenu et en intégration de systèmes de paiement en ligne.
+              </p>
+            </div>
+          </div>
+      
+          <div class="flex flex-col md:flex-row-reverse items-center">
+            <div class="md:w-1/2 mb-6 md:mb-0">
+              <img src="Capture d'écran 2024-10-23 151343.png" alt="Agence de Voyage" class="rounded-lg shadow-lg w-full">
+            </div>
+            <div class="md:w-1/2 md:pr-8">
+              <h3 class="text-2xl font-bold mb-4">Agence de Voyage</h3>
+              <p class="text-gray-600">
+                Dans ce projet, j'ai conçu un site pour une agence de voyage fictive, permettant aux utilisateurs de rechercher et réserver des voyages. J'ai mis en œuvre des fonctionnalités telles que la gestion des offres spéciales, un calendrier interactif et une section de feedback des utilisateurs, en me concentrant sur une expérience utilisateur fluide et intuitive.
+              </p>
+            </div>
+          </div>
+         </div> 
+       </div>
+     </div>
+    </div>
+ </section>
+ <section>
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="max-w-lg w-full bg-white p-8 shadow-lg rounded-lg">
+      <h2 class="text-2xl font-bold mb-6 text-center">Formulaire de Contact</h2>
+      <form action="#" method="POST">
+        <!-- Nom -->
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-bold mb-2">Nom</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+
+        <!-- Adresse -->
+        <div class="mb-4">
+          <label for="address" class="block text-gray-700 font-bold mb-2">Adresse</label>
+          <input type="text" id="address" name="address" placeholder="Votre adresse" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+
+        <!-- Message -->
+        <div class="mb-6">
+          <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Votre message" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button type="submit" class="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-pink-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+            Envoyer
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+ </section>
+
+  
+
+    
+</body>
+</html>
